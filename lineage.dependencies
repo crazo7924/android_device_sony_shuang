@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "crazo7924/android_kernel_sony_msm8x10",
+    "target_path": "kernel/sony/msm8x10",
+  },
+  {
+    "repository": "crazo7924/android_vendor_lenovo_k5fpr",
+    "target_path": "vendor/sony/shuang",
+  },
+  {
+    "repository": "android_device_sony_common",
+    "target_path": "device/sony/common"
+  },
+  {
+    "repository": "android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat"
+  },
+  {
+    "repository": "android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep"
+  },
+]

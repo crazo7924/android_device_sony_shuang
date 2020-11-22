@@ -1,0 +1,43 @@
+# /proc
+type proc_swap, proc_type;
+
+# /sys
+type sysfs_als, fs_type, sysfs_type;
+type sysfs_block_iosched, fs_type, sysfs_type;
+type sysfs_bluetooth_control, fs_type, sysfs_type;
+type sysfs_bus_i2c, fs_type, sysfs_type;
+type sysfs_disk_polling, fs_type, sysfs_type;
+type sysfs_fm, fs_type, sysfs_type;
+type sysfs_gpio, fs_type, sysfs_type;
+type sysfs_i2c_name, fs_type, sysfs_type;
+type sysfs_input_devices, fs_type, sysfs_type;
+type sysfs_lights_effects, fs_type, sysfs_type;
+type sysfs_mac_serial, fs_type, sysfs_type;
+type sysfs_mhl, fs_type, sysfs_type;
+type sysfs_power_control, fs_type, sysfs_type;
+type sysfs_proximity_sensor, sysfs_type, fs_type;
+type sysfs_rmtfs, sysfs_type, fs_type;
+type sysfs_system_soc, fs_type, sysfs_type;
+type sysfs_thermal_control, fs_type, sysfs_type;
+type sysfs_timekeep, fs_type, sysfs_type;
+type sysfs_wcnss_ssr, fs_type, sysfs_type;
+
+# debugfs
+type debugfs_asoc, debugfs_type, fs_type;
+
+# FM
+type fm_data_file, data_file_type;
+
+# sockets
+type mm-pp-daemon, file_type;
+type tad_socket, file_type;
+type wcnss_device, file_type;
+
+# Camera
+type mm-qcamerad, file_type;
+type camera_socket, file_type;
+
+
+# Timekeep
+type timekeep_data_file, core_data_file_type, file_type, data_file_type;
+

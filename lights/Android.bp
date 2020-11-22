@@ -1,0 +1,28 @@
+cc_binary {
+    name: "android.hardware.light@2.0-service.shuang",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.light@2.0-service.shuang.rc"],
+
+    srcs: [
+        "Light.cpp",
+        "service.cpp",
+    ],
+
+    include_dirs: [
+        "system/core/base/include"
+    ],
+
+    shared_libs: [
+        "libhardware",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "android.hardware.light@2.0",
+    ],
+
+    static_libs: [
+        "libbase",
+    ],
+}

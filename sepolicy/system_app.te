@@ -1,0 +1,15 @@
+binder_call(system_app, vold)
+binder_call(system_app, wificond)
+
+set_prop(system_app, fm_prop)
+set_prop(system_app, timekeep_prop)
+
+#============= system_app ==============
+allow system_app fm_data_file:file read;
+allow system_app proc_pagetypeinfo:file r_file_perms;
+allow system_app selinuxfs:file { open read };
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file read;
+
+r_dir_file(system_app, sysfs_timekeep)
+r_dir_file(system_app, sysfs_rtc)
