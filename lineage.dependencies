@@ -4,7 +4,7 @@
     "target_path": "kernel/sony/msm8x10",
   },
   {
-    "repository": "crazo7924/android_vendor_lenovo_k5fpr",
+    "repository": "crazo7924/android_vendor_sony_shuang",
     "target_path": "vendor/sony/shuang",
   },
   {
