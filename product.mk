@@ -75,7 +75,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    ueventd.qcom.ramdisk
 
 # Keys layouts
 PRODUCT_COPY_FILES += \
