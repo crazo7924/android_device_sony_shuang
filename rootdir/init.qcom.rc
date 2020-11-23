@@ -69,13 +69,6 @@ on enable-low-power
     write /sys/devices/system/cpu/cpufreq/interactive/boost 0
 
 on init
-    # Make folder partitions
-    mkdir /persist 0771 root system
-    mkdir /persist/data 0700 system system
-    mkdir /persist/data/sfs 0700 system system
-    mkdir /persist/data/tz 0700 system system
-    mkdir /lta-label 0771 system system
-
     # Make symlink of firmware files
     symlink /system/etc/firmware /firmware
 

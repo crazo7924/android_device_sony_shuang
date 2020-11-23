@@ -123,7 +123,6 @@ TARGET_NO_RADIOIMAGE := true
 
 # Extra Root symlinks
 BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/lta-label:/lta-label
-BOARD_ROOT_EXTRA_SYMLINKS += /system/etc/firmware:/firmware
 
 # Binder API
 TARGET_USES_64_BIT_BINDER := true
