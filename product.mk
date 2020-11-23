@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.qcom.rc
 
-PRODUCT_COPY_FILES += rootdir/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.qcom.rc
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.qcom.rc
 
 # Keys layouts
 PRODUCT_COPY_FILES += \
