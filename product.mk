@@ -68,15 +68,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Init + Ramdisk packages
+# Required to boot
 PRODUCT_PACKAGES += \
     fstab.ramdisk \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    ueventd.qcom.ramdisk
+    init.recovery.qcom.rc
+
+PRODUCT_COPY_FILES += rootdir/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.qcom.rc
 
 # Keys layouts
 PRODUCT_COPY_FILES += \
