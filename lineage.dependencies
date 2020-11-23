@@ -1,13 +1,5 @@
 [
   {
-    "repository": "crazo7924/android_kernel_sony_msm8x10",
-    "target_path": "kernel/sony/msm8x10",
-  },
-  {
-    "repository": "crazo7924/android_vendor_sony_shuang",
-    "target_path": "vendor/sony/shuang",
-  },
-  {
     "repository": "android_device_sony_common",
     "target_path": "device/sony/common"
   },
