@@ -1,3 +1,7 @@
 #============= rild ==============
+type rild, domain;
+type rild_exec, exec_type, vendor_file_type;
+init_daemon_domain(rild);
 allow rild diag_device:chr_file rw_file_perms;
 allow rild proc_cmdline:file { getattr open read };
+

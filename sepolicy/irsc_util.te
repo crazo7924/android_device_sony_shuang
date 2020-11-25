@@ -1,0 +1,4 @@
+# irsc_uril
+type irsc_util, domain;
+type irsc_util_exec, exec_type, vendor_file_type;
+
