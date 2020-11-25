@@ -1,26 +1,26 @@
 # ADSP
-bin/adsprpcd
+vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
 
 # ADSP firmware
-etc/firmware/adsp.b00
-etc/firmware/adsp.b01
-etc/firmware/adsp.b02
-etc/firmware/adsp.b03
-etc/firmware/adsp.b04
-etc/firmware/adsp.b05
-etc/firmware/adsp.b06
-etc/firmware/adsp.b07
-etc/firmware/adsp.mdt
+vendor/etc/firmware/adsp.b00
+vendor/etc/firmware/adsp.b01
+vendor/etc/firmware/adsp.b02
+vendor/etc/firmware/adsp.b03
+vendor/etc/firmware/adsp.b04
+vendor/etc/firmware/adsp.b05
+vendor/etc/firmware/adsp.b06
+vendor/etc/firmware/adsp.b07
+vendor/etc/firmware/adsp.mdt
 
 # Audio
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/MTP_General_cal.acdb
-etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/MTP/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
 vendor/lib/libacdbrtac.so
@@ -29,23 +29,23 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 
 # Bluetooth
-bin/btnvtool
-bin/dun-server
-bin/hci_qcomm_init
-bin/sapd
+vendor/bin/btnvtool
+vendor/bin/dun-server
+vendor/bin/hci_qcomm_init
+vendor/bin/sapd
 vendor/lib/libCommandSvc.so
 vendor/lib/libbtnv.so
 
 # Camera
-bin/mm-qcamera-daemon
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-lib/hw/camera.vendor.msm8610.so
-lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libqomx_core.so
+vendor/bin/mm-qcamera-daemon
+vendor/etc/firmware/cpp_firmware_v1_1_1.fw
+vendor/etc/firmware/cpp_firmware_v1_1_6.fw
+vendor/etc/firmware/cpp_firmware_v1_2_0.fw
+vendor/lib/hw/camera.vendor.msm8610.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libqomx_core.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
@@ -76,14 +76,14 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 
 # CMNLib firmware
-etc/firmware/cmnlib.b00
-etc/firmware/cmnlib.b01
-etc/firmware/cmnlib.b02
-etc/firmware/cmnlib.b03
-etc/firmware/cmnlib.mdt
+vendor/etc/firmware/cmnlib.b00
+vendor/etc/firmware/cmnlib.b01
+vendor/etc/firmware/cmnlib.b02
+vendor/etc/firmware/cmnlib.b03
+vendor/etc/firmware/cmnlib.mdt
 
 # Data
-bin/netmgrd
+vendor/bin/netmgrd
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsnetutils.so
 vendor/lib/libdsutils.so
@@ -95,8 +95,8 @@ vendor/lib/libqdp.so
 vendor/lib/libdiag.so
 
 # GPS
-lib/libloc_api_v02.so
-lib/libloc_ds_api.so
+vendor/lib/libloc_api_v02.so
+vendor/lib/libloc_ds_api.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -122,47 +122,47 @@ vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
 
 # Graphics firmware
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
+vendor/etc/firmware/a300_pfp.fw
+vendor/etc/firmware/a300_pm4.fw
 
 # ISDBT firmware
-etc/firmware/isdbtmm.b00
-etc/firmware/isdbtmm.b01
-etc/firmware/isdbtmm.b02
-etc/firmware/isdbtmm.b03
-etc/firmware/isdbtmm.mdt
+vendor/etc/firmware/isdbtmm.b00
+vendor/etc/firmware/isdbtmm.b01
+vendor/etc/firmware/isdbtmm.b02
+vendor/etc/firmware/isdbtmm.b03
+vendor/etc/firmware/isdbtmm.mdt
 
 # Keymaster firmware
-etc/firmware/image/keymaste.b00
-etc/firmware/image/keymaste.b01
-etc/firmware/image/keymaste.b02
-etc/firmware/image/keymaste.b03
-etc/firmware/image/keymaste.mdt
+vendor/etc/firmware/image/keymaste.b00
+vendor/etc/firmware/image/keymaste.b01
+vendor/etc/firmware/image/keymaste.b02
+vendor/etc/firmware/image/keymaste.b03
+vendor/etc/firmware/image/keymaste.mdt
 
 # MBA firmware
-etc/firmware/mba.b00
-etc/firmware/mba.mdt
+vendor/etc/firmware/mba.b00
+vendor/etc/firmware/mba.mdt
 
 # Modem firmware
-etc/firmware/modem.b00
-etc/firmware/modem.b01
-etc/firmware/modem.b02
-etc/firmware/modem.b03
-etc/firmware/modem.b04
-etc/firmware/modem.b05
-etc/firmware/modem.b08
-etc/firmware/modem.b15
-etc/firmware/modem.b16
-etc/firmware/modem.b17
-etc/firmware/modem.b18
-etc/firmware/modem.b19
-etc/firmware/modem.b20
-etc/firmware/modem.b21
-etc/firmware/modem.b22
-etc/firmware/modem.b25
-etc/firmware/modem.b26
-etc/firmware/modem.b27
-etc/firmware/modem.mdt
+vendor/etc/firmware/modem.b00
+vendor/etc/firmware/modem.b01
+vendor/etc/firmware/modem.b02
+vendor/etc/firmware/modem.b03
+vendor/etc/firmware/modem.b04
+vendor/etc/firmware/modem.b05
+vendor/etc/firmware/modem.b08
+vendor/etc/firmware/modem.b15
+vendor/etc/firmware/modem.b16
+vendor/etc/firmware/modem.b17
+vendor/etc/firmware/modem.b18
+vendor/etc/firmware/modem.b19
+vendor/etc/firmware/modem.b20
+vendor/etc/firmware/modem.b21
+vendor/etc/firmware/modem.b22
+vendor/etc/firmware/modem.b25
+vendor/etc/firmware/modem.b26
+vendor/etc/firmware/modem.b27
+vendor/etc/firmware/modem.mdt
 
 # MultiMedia
 vendor/lib/libDivxDrm.so
@@ -183,15 +183,15 @@ vendor/lib/libmmstillomx.so
 vendor/lib/libqc-opt.so
 
 # PlayReady firmware
-etc/firmware/playready.b00
-etc/firmware/playready.b01
-etc/firmware/playready.b02
-etc/firmware/playready.b03
-etc/firmware/playready.mdt
+vendor/etc/firmware/playready.b00
+vendor/etc/firmware/playready.b01
+vendor/etc/firmware/playready.b02
+vendor/etc/firmware/playready.b03
+vendor/etc/firmware/playready.mdt
 
 # QMI
-bin/irsc_util
-bin/qmuxd
+vendor/bin/irsc_util
+vendor/bin/qmuxd
 vendor/bin/sct_service
 vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
@@ -210,24 +210,24 @@ vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qcril-hook-oem.so
 
 # Radio
-bin/radish
-bin/rfs_access
+vendor/bin/radish
+vendor/bin/rfs_access
 
 # RemoteFS
-bin/rmt_storage
+vendor/bin/rmt_storage
 
 # RIL
-bin/rild
-lib/libril.so
+vendor/bin/rild
+vendor/lib/libril.so
 
 # Sensors
-lib/hw/sensors.msm8610.so
-bin/magnetic
+vendor/lib/hw/sensors.msm8610.so
+vendor/bin/magnetic
 
 # Security
-bin/qseecomd
-lib/lib_asb_tee.so
-lib/libkeyctrl.so
+vendor/bin/qseecomd
+vendor/lib/lib_asb_tee.so
+vendor/lib/libkeyctrl.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
@@ -235,8 +235,8 @@ vendor/lib/libdrmtime.so
 vendor/lib/librpmb.so
 
 # Sound effects
-lib/soundfx/libposteffectwrapper.so
-lib/soundfx/libpreeffectwrapper.so
+vendor/lib/soundfx/libposteffectwrapper.so
+vendor/lib/soundfx/libpreeffectwrapper.so
 vendor/lib/surround_sound_headers.so
 
 # Time services
@@ -248,39 +248,39 @@ vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # TrimArea
-lib/libMiscTaAccessor.so
-lib/libmiscta.so
-lib/libta.so
+vendor/lib/libMiscTaAccessor.so
+vendor/lib/libmiscta.so
+vendor/lib/libta.so
 vendor/bin/ta_qmi_service
 vendor/bin/tad_static
 
 # TZLibASB firmware
-etc/firmware/tzlibasb.b00
-etc/firmware/tzlibasb.b01
-etc/firmware/tzlibasb.b02
-etc/firmware/tzlibasb.b03
-etc/firmware/tzlibasb.mdt
+vendor/etc/firmware/tzlibasb.b00
+vendor/etc/firmware/tzlibasb.b01
+vendor/etc/firmware/tzlibasb.b02
+vendor/etc/firmware/tzlibasb.b03
+vendor/etc/firmware/tzlibasb.mdt
 
 # TZSuntory firmware
-etc/firmware/tzsuntory.b00
-etc/firmware/tzsuntory.b01
-etc/firmware/tzsuntory.b02
-etc/firmware/tzsuntory.b03
-etc/firmware/tzsuntory.mdt
+vendor/etc/firmware/tzsuntory.b00
+vendor/etc/firmware/tzsuntory.b01
+vendor/etc/firmware/tzsuntory.b02
+vendor/etc/firmware/tzsuntory.b03
+vendor/etc/firmware/tzsuntory.mdt
 
 # UI
 vendor/lib/libuiblur.so
 
 # WCNSS Firmware
-etc/firmware/wcnss.b00
-etc/firmware/wcnss.b01
-etc/firmware/wcnss.b02
-etc/firmware/wcnss.b04
-etc/firmware/wcnss.b06
-etc/firmware/wcnss.b07
-etc/firmware/wcnss.b08
-etc/firmware/wcnss.b09
-etc/firmware/wcnss.mdt
+vendor/etc/firmware/wcnss.b00
+vendor/etc/firmware/wcnss.b01
+vendor/etc/firmware/wcnss.b02
+vendor/etc/firmware/wcnss.b04
+vendor/etc/firmware/wcnss.b06
+vendor/etc/firmware/wcnss.b07
+vendor/etc/firmware/wcnss.b08
+vendor/etc/firmware/wcnss.b09
+vendor/etc/firmware/wcnss.mdt
 
 # Widevine DRM
 -framework/com.google.widevine.software.drm.jar
@@ -293,8 +293,8 @@ vendor/lib/libwvm.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Widevine firmware
-etc/firmware/widevine.b00
-etc/firmware/widevine.b01
-etc/firmware/widevine.b02
-etc/firmware/widevine.b03
-etc/firmware/widevine.mdt
+vendor/etc/firmware/widevine.b00
+vendor/etc/firmware/widevine.b01
+vendor/etc/firmware/widevine.b02
+vendor/etc/firmware/widevine.b03
+vendor/etc/firmware/widevine.mdt
