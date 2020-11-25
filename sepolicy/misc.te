@@ -1,0 +1,10 @@
+#============ adb_root =============
+type adb_root, domain;
+type adb_root_exec, exec_type, file_type, system_file_type;
+allow adb_root self:capability sys_resource;
+
+#============= mediacodec ==============
+allow mediacodec kmsg_debug_device:chr_file { append open };
+
+#============= toolbox ==============
+allow toolbox init:fifo_file read;

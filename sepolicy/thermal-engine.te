@@ -1,0 +1,2 @@
+# thermal-engine service
+init_daemon_domain(thermal-engine);

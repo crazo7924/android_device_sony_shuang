@@ -68,13 +68,9 @@ on enable-low-power
     write /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor 100000
     write /sys/devices/system/cpu/cpufreq/interactive/boost 0
 
-on init
-    # Make symlink of firmware files
-    symlink /system/etc/firmware /firmware
-
 on fs
     mount_all fstab.qcom --early
-	swapon_all fstab.qcom
+    swapon_all fstab.qcom
 
     chown system system /lta-label
     chmod 0555 /lta-label
@@ -431,16 +427,16 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
-service irsc_util /system/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/etc/sec_config"
     class core
     user root
     oneshot
 
-service rmt_storage /system/bin/rmt_storage
+service rmt_storage /vendor/bin/rmt_storage
     class core
     user root
 
-service rfs_access /system/bin/rfs_access
+service rfs_access /vendor/bin/rfs_access
     class core
     user root
     group system net_raw
@@ -451,20 +447,20 @@ on property:wc_transport.start_hci=true
 on property:wc_transport.start_hci=false
     stop start_hci_filter
 
-service start_hci_filter /system/bin/wcnss_filter
+service start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
     group bluetooth oem_2950 system wakelock
     disabled
 
-service bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
+service bt-dun /vendor/bin/dun-server /dev/smd7 /dev/rfcomm0
     class late_start
     user bluetooth
     group bluetooth net_bt_admin inet
     disabled
     oneshot
 
-service bt-sap /system/bin/sapd 15
+service bt-sap /vendor/bin/sapd 15
     user bluetooth
     group bluetooth net_bt_admin
     class late_start
@@ -472,13 +468,13 @@ service bt-sap /system/bin/sapd 15
     oneshot
 
 # QMUX must be in multiple groups to support external process connections
-service qmuxd /system/bin/qmuxd
+service qmuxd /vendor/bin/qmuxd
     class main
     user root
     group radio audio bluetooth gps oem_2950
     disabled
 
-service netmgrd /system/bin/netmgrd
+service netmgrd /vendor/bin/netmgrd
     class main
     disabled
 
@@ -503,14 +499,14 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-service hostapd /system/bin/hostapd -dd /data/hostapd/hostapd.conf
+service hostapd /vendor/bin/hostapd -dd /data/hostapd/hostapd.conf
     class late_start
     user root
     group root
     oneshot
     disabled
 
-service ril-daemon2 /system/bin/rild -c 2
+service ril-daemon2 /vendor/bin/rild -c 2
     class main
     socket rild2 stream 660 root radio
     socket sap_uim_socket2 stream 660 bluetooth bluetooth
@@ -529,7 +525,7 @@ service charger /system/bin/charger
     group root radio system
     seclabel u:r:charger:s0
 
-service thermal-engine /system/vendor/bin/thermal-engine
+service thermal-engine /vendor/bin/thermal-engine
     class main
     user root
     socket thermal-send-client stream 0666 system system
@@ -537,12 +533,12 @@ service thermal-engine /system/vendor/bin/thermal-engine
     socket thermal-recv-passive-client stream 0666 system system
     group root
 
-service qseecomd /system/bin/qseecomd
+service qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
 
-service wcnss-service /system/bin/wcnss_service
+service wcnss-service /vendor/bin/wcnss_service
     class main
     user system
     group system wifi radio
@@ -550,7 +546,7 @@ service wcnss-service /system/bin/wcnss_service
 
 # SONY: TrimArea Daemon
 # Last 2 args: start block(blk size 128k), number of blocks(partitionsize(kb)/128(kb))
-service tad_static /system/vendor/bin/tad_static /dev/block/platform/msm_sdcc.1/by-name/TA 0,16
+service tad_static /vendor/bin/tad_static /dev/block/platform/msm_sdcc.1/by-name/TA 0,16
     class trimarea
     user root
     group root
@@ -562,7 +558,7 @@ service sct_service /vendor/bin/sct_service
     disabled
 
 # Trim Area QMI service
-service ta_qmi_service /system/vendor/bin/ta_qmi_service
+service ta_qmi_service /vendor/bin/ta_qmi_service
     user root
     disabled
 

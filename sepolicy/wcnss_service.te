@@ -1,0 +1,2 @@
+# wcnss_service
+init_daemon_domain(wcnss_service);
