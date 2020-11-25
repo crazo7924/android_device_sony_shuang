@@ -65,8 +65,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Partitions blocks
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+BOARD_ROOT_EXTRA_FOLDERS += firmware
+
 # Root extra symlinks
-BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /data/tombstones:/tombstones \
+    /vendor/etc/firmware:/firmware
 
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
@@ -120,9 +124,6 @@ BOARD_LIB_DUMPSTATE := libdumpstate.sony
 # Images
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-
-# Extra Root symlinks
-BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/lta-label:/lta-label
 
 # Binder API
 TARGET_USES_64_BIT_BINDER := true

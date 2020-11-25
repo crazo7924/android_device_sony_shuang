@@ -218,7 +218,6 @@ vendor/bin/rmt_storage
 
 # RIL
 vendor/bin/rild
-vendor/lib/libril.so
 
 # Sensors
 vendor/lib/hw/sensors.msm8610.so
