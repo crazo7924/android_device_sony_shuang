@@ -1,3 +1,5 @@
-# dun-server
-init_daemon_domain(dun-server);
+# dun_server
+type dun_server, domain;
+type dun_server_exec, exec_type, file_type, vendor_file_type; 
+init_daemon_domain(dun_server);
 

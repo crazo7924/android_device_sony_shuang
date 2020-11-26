@@ -1,6 +1,6 @@
 
 # vendor executables
-/vendor/bin/dun-server                          u:object_r:dun-server_exec:s0
+/vendor/bin/dun-server                          u:object_r:dun_server_exec:s0
 /vendor/bin/hostapd                             u:object_r:hostapd_exec:s0
 /vendor/bin/magnetic                            u:object_r:akmd_exec:s0
 /vendor/bin/rfs_access                          u:object_r:rfs_access_exec:s0
