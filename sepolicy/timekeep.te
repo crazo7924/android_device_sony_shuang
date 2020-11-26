@@ -3,7 +3,7 @@
 # clock from persist.vendor.timeadjust property, reads
 # /sys/class/rtc/rtc0/since_epoch
 type timekeep, domain;
-type timekeep_exec, exec_type, file_type;
+type timekeep_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(timekeep)
 

@@ -2,11 +2,8 @@
 # vendor executables
 /vendor/bin/dun-server                          u:object_r:dun-server_exec:s0
 /vendor/bin/hostapd                             u:object_r:hostapd_exec:s0
-/vendor/bin/irsc_util                           u:object_r:irsc_util_exec:s0
 /vendor/bin/magnetic                            u:object_r:akmd_exec:s0
-/vendor/bin/qseecomd                            u:object_r:qseecomd_exec:s0
 /vendor/bin/rfs_access                          u:object_r:rfs_access_exec:s0
-/vendor/bin/rmt_storage                         u:object_r:rmt_storage_exec:s0
 /vendor/bin/sapd                                u:object_r:sapd_exec:s0
 /vendor/bin/sct_service	                        u:object_r:sct_service_exec:s0
 /vendor/bin/ta_qmi_service                      u:object_r:ta_qmi_service_exec:s0

@@ -1,6 +1,4 @@
 #============= rmt_storage ==============
-type rmt_storage, domain;
-type rmt_storage_exec, exec_type, vendor_file_type;
 init_daemon_domain(rmt_storage);
 
 allow rmt_storage modem_block_device:blk_file rw_file_perms;
